@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.two_button);
 
         btn1=findViewById(R.id.btn1);
-        cons2=findViewById(R.id.layout)；
+        cons2=findViewById(R.id.layout);
 
         btn2=new Button(this);
         btn2.setText("按钮2");
