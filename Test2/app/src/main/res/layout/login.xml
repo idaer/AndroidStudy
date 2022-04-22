@@ -9,15 +9,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="11">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="18dp"
-            android:text="TextView"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="账号"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="21dp"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="15dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toEndOf="@+id/textView"
@@ -36,9 +36,9 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="56dp"
-            android:text="TextView"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="55dp"
+            android:text="密码"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -46,7 +46,7 @@
             android:id="@+id/Password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="21dp"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:inputType="textPersonName"
@@ -57,7 +57,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="10">
 
         <Switch
             android:id="@+id/switch_btn"
@@ -78,19 +78,21 @@
             android:text="登录"
             app:layout_constraintStart_toEndOf="@+id/switch_btn"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/autologin"
+            android:layout_width="118dp"
+            android:layout_height="34dp"
+            android:text="autolog"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="45dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="10">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

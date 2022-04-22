@@ -3,6 +3,7 @@ package com.example.test2;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,16 +18,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     ConstraintLayout cons2;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent=getIntent();
+        Bundle bundle=intent.getBundleExtra("bundle");
+        String name=bundle.getString("name");
+
         setContentView(R.layout.two_button);
 
         btn1=findViewById(R.id.btn1);
         cons2=findViewById(R.id.layout);
 
         btn2=new Button(this);
-        btn2.setText("按钮2");
+        btn2.setText(name);
 
         btn2.setTag("2");
         btn1.setTag("1");
